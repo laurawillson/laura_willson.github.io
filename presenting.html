@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Willson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/f7669b7a6b.js"></script>
+
+    <style>
+      body{
+        font-family: 'Raleway', sans-serif;
+        color:black;
+        overflow-x: hidden;
+      }
+    
+      .navbar-nav.navbar-center{
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+      }
+
+      .navbar-custom{
+        background-color: rgb(235, 235, 235);
+      }
+        
+      .greeting{
+        font-family: 'Raleway', sans-serif;
+        color: black;
+      }
+    
+      .hello{
+        border-bottom: 3px solid transparent;
+      }
+      
+      .hello:hover{
+        border-bottom: solid 3px rgb(121, 113, 113); 
+      }
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom bg-light">
+        <a class="navbar-brand" href="https://www.google.com/" target="_blank"> <img style="width: 70px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+            <ul class="navbar-nav mr-auto navbar-center">
+
+                <li class="nav-item">
+                    <a class="nav-link hello" href="home.html" style="font-size: 20px; font-weight: bold; margin-left: 20px;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hello" href="about.html"style="font-size: 20px; font-weight: bold; margin-left: 20px">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link hello" href="photography.html"style="font-size: 20px; font-weight: bold; margin-left: 20px">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hello" href="contact.html"style="font-size: 20px; font-weight: bold; margin-left: 20px">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item  active text-center">
+            <img class="w-100 " src="prints.jpg" alt="First slide" style= "margin-top: 80px; width:30%;">
+          </div>
+          <div class="carousel-item text-center">
+            <img class="w-100 " src="Pic_of_Me.png" alt="Second slide">
+          </div>
+          <div class="carousel-item  text-center">
+            <img class=" w-100" src="Central_Park.jpg" alt="Third slide" style= "width:30%;">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="greeting" style="text-align:center; margin-top: 30px; font-size: 20px;">Four 8" x 10" prints - taken around NYC.</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

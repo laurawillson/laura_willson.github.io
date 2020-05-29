@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Willson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{
+        font-family: 'Raleway', sans-serif;
+        color:black;
+        overflow-x: hidden;
+        background-color: rgb(235, 235, 235);
+    }
+
+    .navbar-nav.navbar-center{
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .navbar-custom{
+        background-color: rgb(235, 235, 235);
+    }
+
+    .hello{
+        border-bottom: 3px solid transparent;
+    }
+
+    .hello:hover{
+        border-bottom: solid 3px rgb(121, 113, 113); 
+    }
+
+    .view{
+        width: 500px;
+        height: 400px;
+        border: 10px solid #fff;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        box-shadow: 1px 1px 2px #e6e6e6;
+        cursor: default;
+        background: #fff url(../images/bgimg.jpg) no-repeat center center
+    }
+
+    .view .mask, .view .content{
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0
+    }
+
+    .view img{
+        display: block;
+        position: relative
+    }
+
+    .view a.info{
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 0 1px #000
+    }
+
+    .view a.info:hover{
+        box-shadow: 0 0 5px #000
+    }
+
+    .view-first img{ 
+        transition: all 0.2s linear;
+    }
+
+    .view-first .mask{
+        opacity: 0;
+        background-color: rgba(211, 199, 183, 0.7); 
+        transition: all 0.4s ease-in-out;
+    }
+
+    .view-first a.info{
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .view-first:hover img{ 
+        transform: scale(1.1);
+    } 
+
+    .view-first:hover .mask{ 
+        opacity: 1;
+    }
+
+    .view-first:hover a.info{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .view-first:hover a.info{
+        transition-delay: 0.2s;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  
+    .custom-toggler.navbar-toggler {
+        border-color: rgb(255,102,203);
+    } 
+
+    .instagram-icon{
+        color: gray;
+    }
+
+    .instagram-icon:hover{
+        color: purple;
+    }
+</style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom bg-light">
+        <a class="navbar-brand" href="https://www.google.com/" target="_blank"> <img style="width: 70px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color:black;"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+            <ul class="navbar-nav mr-auto navbar-center">
+
+                <li class="nav-item">
+                    <a class="nav-link hello" href="home.html" style="font-size: 20px; font-weight: bold; margin-left: 20px;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hello" href="about.html"style="font-size: 20px; font-weight: bold; margin-left: 20px">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link hello" href="photography.html"style="font-size: 20px; font-weight: bold; margin-left: 20px">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hello" href="contact.html"style="font-size: 20px; font-weight: bold; margin-left: 20px">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--FIRST ROW-->
+<div class="row ">
+    <div class="col text-center" >
+        <div class="view view-first " style="margin-left:15%">   
+            <img class="img-fluid" src="Sunrise_4.jpg" style="margin-top: 50px; width: 700px;"/>  
+            <div class="mask "> 
+                <a href="sunrise.html" class="info" style="margin-top: 31%;">View</a>  
+            </div>  
+       </div>  
+    </div>
+    <div class="col ">
+        <div class="view view-first" style="margin-left:15%">  
+            <img src="prints.jpg" style="width: 700px; margin-top: 50px"/>  
+            <div class="mask"> 
+                <a href="presenting.html" class="info" style="margin-top: 31%;">View</a>  
+            </div>  
+        </div>  
+    </div>
+</div>
+<!--END FIRST ROW-->
+
+<!--SECOND ROW-->
+<div class="row ">
+    <div class="col ">
+        <div class="view view-first" style="margin-left:15%">  
+            <img src="Baby_boi.jpg" style="width: 700px; margin-top: 50px"/>  
+            <div class="mask"> 
+                <a href="#" class="info" style="margin-top: 31%;">View</a>  
+            </div>  
+        </div>  
+    </div>
+    <div class="col ">
+        <div class="view view-first" style="margin-left:15%">  
+            <img src="Presenting_Prints.jpg" style="width: 700px; margin-top: 50px"/>  
+            <div class="mask"> 
+                <a href="#" class="info" style="margin-top: 31%;">View</a>  
+            </div>  
+        </div>  
+    </div>
+</div>
+<!--END SECOND ROW-->
+
+<div class="text-center">
+    <div class="symbol" style="margin-top: 30px; font-size: 20px;">Check out more of my photography on:
+        <a href="https://www.instagram.com/newyorkcitythroughmylens/" target="_blank">
+            <i class="fa fa-instagram fa-1x instagram-icon"></i>
+        </a>
+    </div>  
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
